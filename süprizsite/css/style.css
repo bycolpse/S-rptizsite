@@ -1,0 +1,148 @@
+@font-face {
+    font-family: 'Determination';
+    src: url('../fonts/determination.ttf') format('truetype');
+}
+
+/* Tüm sayfada özel fontun kullanılmasını garanti altına al */
+body, button, .download-btn, .action-btn-text { 
+    margin: 0; 
+    font-family: 'Determination', sans-serif; 
+    overflow: hidden; 
+    font-size: 1.2rem; 
+}
+
+.hidden { display: none !important; }
+
+/* NORMAL MOD AND FEEDBACK SECTIONS */
+body.normal-mode { background-color: #ffffff; color: #000; }
+#normal-mode header { text-align: center; padding: 20px; font-size: 2em; color: #0000ff; }
+#mods-container { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; padding: 20px; }
+.mod-card { border: 2px solid #0000ff; border-radius: 8px; width: 250px; text-align: center; padding: 15px; transition: opacity 0.5s ease-out; }
+.mod-card.fade-out { opacity: 0; }
+.mod-card img { max-width: 100%; height: 120px; object-fit: contain; }
+.mod-card h2 { color: #0000ff; }
+.download-btn { display: inline-block; background-color: #0000ff; color: #ffffff; padding: 10px 20px; text-decoration: none; border-radius: 5px; margin-top: 10px; }
+#feedback-section { position: fixed; bottom: 0; width: 100%; background: #f0f0f0; text-align: center; padding: 10px; border-top: 1px solid #ccc; z-index: 100; }
+#feedback-section button { padding: 8px 16px; margin: 0 10px; }
+
+/* -- NEW: BUTTON ANIMATIONS -- */
+.download-btn, #feedback-section button, #start-battle-btn {
+    transition: transform 0.1s ease, background-color 0.2s ease, filter 0.2s ease;
+}
+.download-btn:hover, #feedback-section button:hover, #start-battle-btn:hover {
+    transform: scale(1.05);
+    filter: brightness(1.1);
+}
+.download-btn:active, #feedback-section button:active, #start-battle-btn:active {
+    transform: scale(0.98);
+    filter: brightness(0.95);
+}
+
+.glitch { animation: glitch-anim 0.2s infinite; }
+@keyframes glitch-anim { 0%{transform: translate(0);} 20%{transform: translate(-3px, 3px);} 40%{transform: translate(-3px, -3px);} 60%{transform: translate(3px, 3px);} 80%{transform: translate(3px, -3px);} 100%{transform: translate(0);} }
+body.devil-mode { background-color: #ff0000; color: #000000; }
+body.devil-mode h1, body.devil-mode h2, body.devil-mode p { color: #000000 !important; }
+body.devil-mode .mod-card { border-color: #000000; }
+body.devil-mode .download-btn { background-color: #000000; color: #ffffff; }
+#black-screen-overlay { position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background-color: #000; z-index: 999; }
+#info-screen { position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background-color: #000; color: #0f0; z-index: 1000; display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start; padding: 20px; box-sizing: border-box; }
+#hacker-container { width: 100%; height: 90%; overflow: hidden; position: relative; }
+#info-data { font-size: 1.5em; white-space: pre-wrap; text-align: left; color: #0f0; position: absolute; bottom: 0; left: 0; animation: scroll-up 20s linear infinite; }
+@keyframes scroll-up { from { transform: translateY(100%); } to { transform: translateY(-100%); } }
+
+#start-battle-btn { 
+    background: #c00; border: 2px solid #c00; color: #fff; padding: 5px 40px; font-size: 2em; cursor: pointer; margin-top: 30px; position: absolute; bottom: 50px; align-self: center;
+}
+#start-battle-btn:hover { background-color: #e00; }
+
+/* --- BATTLE SCREEN & UI --- */
+body.battle-mode { background-color: #000; }
+#battle-screen { position: fixed; top: 0; left: 0; width: 100%; height: 100%; color: #fff; display: flex; flex-direction: column; align-items: center; justify-content: flex-end; z-index: 1001; }
+
+#enemy-area { position: absolute; top: 10%; width: 100%; display: flex; justify-content: center; align-items: flex-start; }
+#enemy-sprite { width: 200px; image-rendering: pixelated; margin-left: 20px; background-image: url('../png/arkaplan.png'); background-size: cover;}
+#enemy-dialogue-box { width: 300px; height: auto; min-height: 80px; padding: 15px; margin-right: 20px; border: 4px solid #fff; background-color: #000; font-size: 1.5em; line-height: 1.3; }
+.enemy-hit { animation: shake 0.2s; }
+@keyframes shake { 0%, 100% {transform: translateX(0);} 25% {transform: translateX(5px);} 75% {transform: translateX(-5px);} }
+
+#battle-interface { display: flex; flex-direction: column; align-items: center; width: 90%; max-width: 800px; margin-bottom: 30px; }
+#interaction-box { width: 100%; height: 180px; border: 4px solid #fff; background-color: #000; margin-bottom: 5px; padding: 0; /* Padding'i sıfırla, iç elementler yönetsin */ box-sizing: border-box; font-size: 2em; line-height: 1.4; position: relative; }
+#interaction-content { padding: 30px; } /* Metinler için padding'i buraya taşı */
+#main-ui-bar { position: relative; width: 100%; height: 60px; border: 4px solid #fff; background-color: #000; display: flex; align-items: center; padding: 0 30px; box-sizing: border-box; font-size: 1.8em; transition: opacity 0.3s; }
+
+/* Kalp stilleri */
+#heart-selector { 
+    position: absolute; 
+    width: 20px; 
+    height: 20px; 
+    background-image: url('../png/kalp.png'); 
+    background-size: contain; 
+    image-rendering: pixelated; 
+    top: 50%; 
+    transform: translateY(-50%); 
+    transition: left 0.1s ease-out; 
+    z-index: 1010; /* En üstte olması için */
+}
+/* Kaçış modunda kalp */
+#interaction-box #heart-selector {
+    transition: none; /* Kaçış modunda anlık hareket için */
+}
+
+#player-name-ui { margin-right: 20px; }
+#hp-bar-ui-container { width: 120px; height: 25px; background: red; border: 2px solid white; margin-right: 40px;}
+#hp-bar-ui { height: 100%; background: yellow; transition: width 0.5s ease; }
+.action-btn-text { color: #fff; cursor: pointer; margin: 0 20px; }
+.action-btn-text.selected { color: yellow; }
+
+/* SUB-MENU OPTIONS */
+.submenu-grid { display: grid; grid-template-columns: repeat(2, 1fr); grid-row-gap: 10px; grid-column-gap: 25px; }
+.submenu-option { cursor: pointer; }
+.submenu-option.selected { color: yellow; }
+.submenu-option.selected::before { content: '* '; }
+#item-description { font-size: 0.8em; color: #ccc; margin-top: 15px; }
+
+/* FIGHT MINIGAME */
+#fight-minigame-box { position: absolute; top: 50%; left: 5%; transform: translateY(-50%); width: 90%; height: 40px; background: linear-gradient(90deg, red 0%, yellow 25%, #0f0 45%, #0f0 55%, yellow 75%, red 100%); border: 2px solid white; }
+#fight-line { position: absolute; top: 0; left: 0; width: 4px; height: 100%; background-color: #fff; }
+@keyframes sweep { from { left: 0%; } to { left: calc(100% - 4px); } }
+
+
+/* --- YENİ SALDIRI STİLLERİ --- */
+#attack-arena {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* Saldırı 1: Kırmızı Bölge */
+.attack-zone {
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background-color: rgba(255, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.1s;
+}
+.attack-zone.left { left: 0; }
+.attack-zone.right { right: 0; }
+.attack-zone.active { opacity: 1; }
+
+/* Saldırı 2 & 3: Mermiler */
+.projectile {
+    position: absolute;
+    background-color: white;
+    image-rendering: pixelated;
+}
+.projectile.bar {
+    width: 8px;
+    height: 50px;
+}
+.projectile.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}

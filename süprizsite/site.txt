@@ -1,0 +1,174 @@
+Bu site minecraftın creepypasta ve benzeri şeylerinin reklamını yapan bir site olacak.
+Site işlevli olacak ama en alltaki site güzel olmuş ve olmamış butonlarından olmamışa tıklarsan. güzel olmuşa tıklarsan teşekkürler diyip normal devam edicek site ama demessen ilk başta geri bildiriminiz için teş- yazıcak. sonra yavaşça sitede görüntü kaymaları olmaya başlıayacak. yavaşça aşşağıda dediklerim olacak. 
+ondan sonra sitedeki minecrat modları yavaşça kaybolacak ve 666 yazmaya başlayacak herşeyde. 
+ondan sonra ise ekran siyah olacak 2 saniye boyunca ve ekran açılacak. site normal kendi arayüzü ile açılacak ama şeytan modunda. 
+Bu modda indir tuşları yerine 666 yazacak ve ıklayınca kullanıcının ip si pc adı kullandığı tarayıcı ve gerçek olmayan korkunç veriler görünecek. bu verilerin en altında 
+Bir buton olacak beyaz. butonda … yazacak. tıklayınca savaş ekranı gelecek.(Bu ekranda png/televizyon.png fotosu ile savaşacağız. savaş ekranı ise arka planı siyah olan
+SİTENİN İKİ ANA MODU
+
+1-NORMAL
+ARKA PLAN BEYAZ.
+Başlık: Creepy Pasta
+Site temasi beyaz,mavi 
+indir tuşları mavi olacak.
+Font fonts klasöründeki determination.ttf olacak.
+Sitede gösterilecek ve indirme linki verilecek modlar.
+
+The Broken script(fotorafı png klasöründeki broken.png)
+
+https://www.curseforge.com/minecraft/mc-mods/the-broken-script-official  (indirme linkine tıklayınca bu linke gidilecek. 
+
+Bu mod oyununuzu ele geçirir ve oyunun yöneticisi siz değil O olur. (modun fotosunun altında yazacak infolar)
+
+Rakes World (rakes.png)
+
+https://rakesworldbybycolpse.netlify.app
+
+Bu gizemli haritayı oynamalısın.
+
+
+SpacePotato Backrooms Mod (Backrooms.png)
+
+https://www.curseforge.com/minecraft/modpacks/spacepotato-backrooms-revamped
+
+
+Çok gerçekçi bir Found footage modu.
+
+
+
+From the fog (fog.png)
+
+https://www.curseforge.com/minecraft/mc-mods/from-the-fog
+
+Herobrine modu.
+
+Savaş ekranı 
+
+Undertale Tarzı Savaş Ekranı - AI İçin Tasarım Talimatları
+Ekran boyutu: Yatay, örneğin 800x450 veya 960x540 piksel (16:9 oranında olabilir)
+
+Arka plan: Düz siyah veya çok koyu ton, mümkünse çok hafif hareket eden basit animasyonlu efekt (örneğin, ufak titreşim veya hafif dalgalanma)
+
+1. Üst Orta Bölge — Düşman Alanı
+Düşman karakter sprite’ı burada konumlandırılacak.
+
+Sprite, ekranın yatay ortasına yakın, biraz yukarıda yer almalı.
+
+Düşmanın çevresinde hareket edebileceği açık bir alan bırakılmalı (örneğin düşman çevresi 200x200 piksel büyüklüğünde bir kare veya daire alan).
+
+Düşman animasyonu veya basit duruşu burada gösterilmeli.
+
+2. Orta Alt Bölge — Oyuncu Kontrol Noktası (Hitbox)
+Küçük bir kare veya daire, yaklaşık 30x30 piksel boyutunda, ekranın yatay ortasında ve alt bölümde konumlanacak.
+
+Bu alan oyuncunun kontrol ettiği “kaçış noktası” olacak.
+
+Renk olarak beyaz veya açık tonlarda olabilir, animasyonlu titreme veya hafif büyüyüp küçülme efektiyle dikkat çekebilir.
+
+3. Alt Bölüm — Menü ve Oyuncu Bilgileri
+Ekranın tam alt kısmında yatay bir bar şeklinde.
+
+Sol alt köşede oyuncu adı (örneğin: “FRISK”) ve hemen yanında kırmızı renkli, yatay HP barı ve sayısal HP değeri (örneğin “20/20”) olmalı.
+
+Sağ alt bölümde, yatay şekilde dört büyük buton ya da kutucuk sıralanacak:
+
+FIGHT (png/fight.png)
+
+ACT (png/act.png)
+
+ITEM (png/item.png)
+
+MERCY (png/mercy.png)
+
+Seçili menü öğesi, belirgin kırmızı veya sarı renkle vurgulanmalı.
+
+Menü yazıları piksel fontuyla, okunaklı ve net olmalı.
+
+4. Genel Stil ve Renkler
+Pikselli, retro tarz.
+
+Menü ve yazılar beyaz veya açık gri.
+
+HP barı kırmızı ve basit.
+
+Menü seçimi kırmızı veya sarı olarak öne çıkarılmalı.
+
+Arka plan koyu siyah, basit ama atmosferik.
+
+5. Ek İstekler (Opsiyonel)
+Menü tuşlarına basıldığında ufak animasyon veya renk değişimi olabilir.
+
+Düşmanın saldırı animasyonu için boş alan bırakılmalı.
+
+Oyuncu kontrol alanı etrafında küçük bir parıltı veya hafif titreşim olabilir.
+
+Düşmanın fotorafının konumu:png/televizyon.png
+
+Savaşta bizi temsil eden kalp için bilgi:
+“Create a small pixel art heart symbol representing the player’s soul or HP. The heart should be about 16x16 pixels in size, bright red color, simple and iconic. The style must be pixelated with sharp edges, no anti-aliasing, and clearly visible pixels.”
+
+Create a pixel-art style turn-based battle interface inspired by Undertale, with the following features and mechanics:
+
+1. Background music plays the looped sound file "sound/metal.ogg".
+
+2. The enemy is a pixel-art creature called "Televizton" with 8000 HP and Durability level IV.
+
+3. The player has 20 HP and a damage reduction mechanic: incoming damage is divided by 20 due to durability.
+
+4. Enemy attacks deal different damage values depending on its mood/state:
+   - Normal mode: 50 damage
+   - Tense mode: 45 damage
+   - Sad mode: 20 damage
+   - Angry mode: 80 damage
+   - Aggressive mode: 200 damage
+
+5. Player attack is a punch with sound "sound/yumruk.ogg", limited to 5 punches per battle.
+
+6. After the player punches twice, add a "Water" item to the inventory (3 units), which deals 100 damage to Televizton when used.
+
+7. Inventory contains:
+   - Ice Cream (5 units)
+   - Money (18 units, throwing it deals 30 damage)
+   - Wallet (empty, clicking it shows the message "Türk genci seni")
+
+8. The battle menu has the usual options: FIGHT, ACT, ITEM, MERCY.
+
+9. Under ACT:
+   - Initially, options "Talk" and "Analyze" are available.
+     - "Talk": Enemy says "Nasıl sitemi beğenmessin!"
+     - "Analyze": Shows enemy HP (8000) and Durability IV.
+
+10. After the player receives damage 4 times, the ACT menu changes, replacing "Talk" with emotional options:
+    - "Anger": Enemy says "Site yapmayı bir daha deneme aptal!"
+    - "Aggressive": Enemy says "Gerçekten tek parmağımla senden daha iyi olurum."
+    - "Sad": Enemy says "Üzülmek için övülmeyi haketmiyorsun."
+    - "Tense": Instead of speaking, enemy stares intently (no dialogue).
+
+11. The player can punch up to 5 times total.
+
+12. The player can use items; throwing money deals 30 damage.
+
+13. The key to defeating Televizton is to use "Talk" repeatedly to pacify it.
+
+14. When Televizton kills the player:
+    - If in Angry or Aggressive mode: display "Hata için üzgünüz! Böyle ufak hatalar can sıkabiliyor."
+    - If in Angry or Tense mode: same message.
+    - If in Tense mode, player survives with 1 HP due to enemy's trembling hands.
+
+15. If the player defeats Televizton by making it sad before dying, a "bad ending" triggers with the message "Site kapanıyor."
+
+16. If the player defeats Televizton while it is tense (hands trembling), display "Sorunu çözdün, aferin!"
+
+17. Punching triggers the punch sound "sound/yumruk.ogg".
+
+---
+
+Design the interface, animations, and dialogue system to reflect these states and mechanics. Make the enemy's emotional states visually distinct and the battle feel dynamic and story-driven, emphasizing that the solution is through interaction and understanding, not just damage.
+
+Bunlar savaşla ilgili bilgiler.
+
+site bize ip gibi şeyler gösterirken arkada sound klasöründeki tv.ogg çalacak bu arada
+
+Ek Talimat (Punch Sound & Attack Timing):
+
+The player’s punch attack plays the sound file "sound/yumruk.ogg". The attack damage is applied only after the "yumruk.ogg" sound has finished playing completely. This means the punch animation and sound must finish before counting as a successful hit.
