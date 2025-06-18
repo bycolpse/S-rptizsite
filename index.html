@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Süpriz Site</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="normal-mode">
+
+    <main id="normal-mode">
+        <header>
+            <h1 id="main-title">Creepy Pasta</h1>
+        </header>
+        <div id="mods-container">
+            <div class="mod-card"><img src="png/broken.png" alt="The Broken Script"><h2>The Broken script</h2><p>Bu mod oyununuzu ele geçirir ve oyunun yöneticisi siz değil O olur.</p><a href="https://www.curseforge.com/minecraft/mc-mods/the-broken-script-official" class="download-btn" target="_blank">İndir</a></div>
+            <div class="mod-card"><img src="png/rakes.png" alt="Rakes World"><h2>Rakes World</h2><p>Bu gizemli haritayı oynamalısın.</p><a href="https://rakesworldbybycolpse.netlify.app" class="download-btn" target="_blank">İndir</a></div>
+            <div class="mod-card"><img src="png/Backrooms.png" alt="Backrooms"><h2>SpacePotato Backrooms Mod</h2><p>Çok gerçekçi bir Found footage modu.</p><a href="https://www.curseforge.com/minecraft/modpacks/spacepotato-backrooms-revamped" class="download-btn" target="_blank">İndir</a></div>
+            <div class="mod-card"><img src="png/fog.png" alt="From the fog"><h2>From the fog</h2><p>Herobrine modu.</p><a href="https://www.curseforge.com/minecraft/mc-mods/from-the-fog" class="download-btn" target="_blank">İndir</a></div>
+        </div>
+    </main>
+
+    <footer id="feedback-section">
+        <p id="feedback-text">Site güzel olmuş mu?</p>
+        <button id="good-feedback">Güzel Olmuş</button>
+        <button id="bad-feedback">Olmamış</button>
+    </footer>
+
+    <div id="black-screen-overlay" class="hidden"></div>
+    <div id="info-screen" class="hidden">
+        <div id="hacker-container">
+            <pre id="info-data"></pre>
+        </div>
+        <button id="start-battle-btn">…</button>
+    </div>
+
+    <div id="battle-screen" class="hidden">
+        <div id="enemy-area">
+            <div id="enemy-dialogue-box" class="hidden">
+                <div id="enemy-dialogue-content"></div>
+            </div>
+            <img id="enemy-sprite" src="png/televizyon.png" alt="Televizton">
+        </div>
+
+        <div id="battle-interface">
+            <div id="interaction-box">
+                <div id="interaction-content"></div>
+                <div id="fight-minigame-box" class="hidden">
+                    <div id="fight-line"></div>
+                </div>
+            </div>
+            <div id="main-ui-bar">
+                <div id="heart-selector"></div>
+                <span id="player-name-ui">SEN</span>
+                <div id="hp-bar-ui-container">
+                    <div id="hp-bar-ui"></div>
+                </div>
+                <div class="action-btn-text" data-action="FIGHT">Fight</div>
+                <div class="action-btn-text" data-action="ACT">Act</div>
+                <div class="action-btn-text" data-action="ITEM">Item</div>
+                <div class="action-btn-text" data-action="MERCY">Mercy</div>
+            </div>
+        </div>
+    </div>
+
+    <audio id="sound-tv" src="sound/tv.ogg" loop></audio>
+    <audio id="sound-metal" src="sound/metal.ogg" loop></audio>
+    <audio id="sound-punch" src="sound/yumruk.ogg"></audio>
+    <audio id="sound-dialogue" src="sound/mettaton.ogg"></audio>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
